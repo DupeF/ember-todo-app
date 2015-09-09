@@ -1,14 +1,5 @@
 <ul id="todo-list">
-    <li class="completed">
-        <input type="checkbox" class="toggle">
-        <label>Learn Ember</label><button class="destroy"></button>
-    </li>
-    <li>
-        <input type="checkbox" class="toggle">
-        <label>...</label><button class="destroy"></button>
-    </li>
-    <li>
-        <input type="checkbox" class="toggle">
-        <label>Profit!</label><button class="destroy"></button>
-    </li>
+    {{#each model as |todo|}}
+      {{todo-item todo=todo}}
+    {{/each}}
 </ul>
