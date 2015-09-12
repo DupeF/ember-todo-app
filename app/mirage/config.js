@@ -28,5 +28,5 @@ export default function() {
       }
     };
   });
-  this.del('.todos/:id');
+  this.del('/todos/:id');
 }
